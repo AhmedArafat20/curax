@@ -1,0 +1,33 @@
+/* ==========================================================================
+   CURAX — RTL OVERRIDES
+   Loaded only on /ar/ pages, after style.css. Flexbox row direction
+   already mirrors automatically under dir="rtl"; these rules fix the
+   remaining hardcoded physical values (left/right) and Arabic type.
+   ========================================================================== */
+
+body {
+  font-family: 'IBM Plex Sans Arabic', var(--font-body);
+  line-height: 1.85;
+}
+h1, h2, h3, h4, .eco-center, .stat-num, .service-index, .process-num, .section-number {
+  font-family: 'IBM Plex Sans Arabic', var(--font-display);
+}
+h1, h2, h3 { line-height: 1.35; }
+
+/* Brand name stays in Latin script and its own font, even inside Arabic copy */
+.nav-logo, .logo-text { font-family: var(--font-display); direction: ltr; unicode-bidi: isolate; }
+
+.eyebrow { letter-spacing: 0; }
+.eyebrow::before { margin-inline-end: 4px; }
+.hero-kicker-text, .stat-label, .footer-col h5, .project-meta span, .project-badge, .lightbox-cat span { letter-spacing: 0; }
+
+.hero-scroll { left: auto; right: var(--gutter); }
+.mobile-menu { clip-path: circle(0% at 44px 44px); }
+.mobile-menu.open { clip-path: circle(150% at 44px 44px); }
+
+.funnel-step { transform-origin: right center; }
+.project-media img { transform: none; }
+
+/* Mirror directional icons/chevrons */
+[dir="rtl"] .btn svg,
+[dir="rtl"] .project-view-btn svg { transform: scaleX(-1); }

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<script>(function(){try{var t=localStorage.getItem('curax-theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>خدماتنا — CuraX | تسويق، مواقع، برمجيات وذكاء اصطناعي</title>
+<meta name="description" content="اكتشف خدمات CuraX: تسويق الأداء، تطوير المواقع، البرمجيات المخصصة والذكاء الاصطناعي — كل خدمة موضحة بما نقدمه فعلياً.">
+<link rel="canonical" href="[CANONICAL_URL]/ar/services.html">
+<meta property="og:title" content="خدمات CuraX">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/animations.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<link rel="stylesheet" href="../css/rtl.css">
+<style>
+.svc-list { border-top: 1px solid var(--border-on-dark); }
+.svc-item { border-bottom: 1px solid var(--border-on-dark); }
+.svc-head { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 32px 0; cursor: pointer; }
+.svc-head:hover .svc-num { color: var(--red-bright); }
+.svc-head .svc-title { display: flex; align-items: baseline; gap: 20px; font-family: var(--font-display); font-size: clamp(1.2rem, 2.4vw, 1.9rem); }
+.svc-head .svc-num { color: var(--blue-bright); font-size: 0.9rem; transition: color .3s var(--ease-out); }
+.svc-toggle { width: 30px; height: 30px; border: 1px solid var(--border-on-dark); border-radius: 50%; position: relative; flex-shrink: 0; transition: transform .3s var(--ease-out); }
+.svc-toggle::before, .svc-toggle::after { content: ''; position: absolute; background: #fff; top: 50%; left: 50%; }
+.svc-toggle::before { width: 12px; height: 1px; transform: translate(-50%,-50%); }
+.svc-toggle::after { width: 1px; height: 12px; transform: translate(-50%,-50%); transition: opacity .3s; }
+.svc-item.open .svc-toggle::after { opacity: 0; }
+.svc-item.open .svc-toggle { transform: rotate(180deg); }
+.svc-body { max-height: 0; overflow: hidden; transition: max-height .45s var(--ease-in-out); }
+.svc-body-inner { padding-bottom: 36px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.svc-body p { color: var(--text-on-dark-sec); max-width: 50ch; }
+.svc-body .deliverables span { display: inline-block; margin: 4px 8px 4px 0; padding: 6px 14px; border: 1px solid var(--border-on-dark); border-radius: 100px; font-size: 0.78rem; color: var(--text-on-dark-sec); }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo"><img src="../assets/images/logo/logo.png" alt="CuraX" class="logo-img" onerror="this.remove()">Cura<span>X</span></a>
+    <nav class="nav-links" aria-label="التنقل الرئيسي">
+      <a href="index.html">الرئيسية</a>
+      <a href="about.html">من نحن</a>
+      <a href="services.html" class="active">خدماتنا</a>
+      <a href="work.html">أعمالنا</a>
+      <a href="contact.html">تواصل معنا</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-switch"><a href="../services.html" data-lang-link>EN</a><span>/</span><a href="services.html" class="active" data-lang-link>AR</a></div>
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"><span class="theme-toggle-track"><span class="theme-toggle-thumb"></span></span></button>
+      <a href="contact.html" class="btn btn-primary nav-cta" data-magnetic>ابدأ مشروعك</a>
+      <button class="mobile-toggle" aria-label="فتح القائمة"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu">
+  <nav class="mobile-menu-links" aria-label="قائمة الجوال">
+    <a href="index.html">الرئيسية</a><a href="about.html">من نحن</a><a href="services.html">خدماتنا</a><a href="work.html">أعمالنا</a><a href="contact.html">تواصل معنا</a>
+  </nav>
+  <div class="mobile-menu-footer">
+    <div class="lang-switch"><a href="../services.html" data-lang-link>EN</a><span>/</span><a href="services.html" class="active" data-lang-link>AR</a></div>
+    <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"><span class="theme-toggle-track"><span class="theme-toggle-thumb"></span></span></button>
+    <a href="contact.html" class="btn btn-outline">ابدأ مشروعك</a>
+  </div>
+</div>
+
+<main>
+  <section class="section bg-black" style="padding-top:calc(var(--nav-h) + 60px)">
+    <div class="container">
+      <span class="eyebrow">خدماتنا</span>
+      <h1 class="reveal-lines" style="font-size:var(--fs-h1); margin-top:22px; max-width:18ch;">
+        <span class="line"><span>ما الذي نقدمه</span></span>
+        <span class="line"><span>فعلياً.</span></span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- MARKETING -->
+  <section class="section bg-navy2" id="marketing">
+    <div class="container">
+      <span class="eyebrow">01 — التسويق</span>
+      <h2 style="margin-top:20px;">تسويق الأداء</h2>
+      <div class="svc-list mt-lg">
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">01</span> إعلانات جوجل</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>حملات بحث وعرض وتسوق مبنية حول نية المستخدم، مع تحريك الميزانية نحو ما يحقق تحويلات فعلية.</p>
+            <div class="deliverables"><span>استراتيجية الكلمات المفتاحية</span><span>نصوص الإعلانات</span><span>تتبع التحويلات</span><span>تقارير شهرية</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">02</span> إعلانات ميتا وإنستغرام</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>حملات إبداعية عبر فيسبوك وإنستغرام، تُختبر وتُطوَّر بناءً على بيانات تفاعل حقيقية.</p>
+            <div class="deliverables"><span>استهداف الجمهور</span><span>اختبار المحتوى الإبداعي</span><span>إعداد البيكسل</span><span>إعادة الاستهداف</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">03</span> إعلانات تيك توك وسناب شات</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>حملات قصيرة مبنية لصيغ المنصة الأصلية بدلاً من إعادة استخدام إعلانات ثابتة.</p>
+            <div class="deliverables"><span>تصور إبداعي</span><span>إعداد Spark Ads</span><span>تتبع الأداء</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">04</span> تحسين محركات البحث والمحتوى</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>تحسين تقني وعلى الصفحة مع محتوى مبني حول ما يبحث عنه الجمهور فعلياً.</p>
+            <div class="deliverables"><span>تدقيق تقني</span><span>تحسين الصفحة</span><span>تقويم محتوى</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">05</span> إدارة السوشيال ميديا</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>حضور متسق ومتوافق مع الهوية، بخطة محتوى مرتبطة بأهداف العمل لا مجرد النشر لذاته.</p>
+            <div class="deliverables"><span>تخطيط المحتوى</span><span>إدارة المجتمع</span><span>تحليلات</span></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEB -->
+  <section class="section bg-black" id="web">
+    <div class="container">
+      <span class="eyebrow">02 — تطوير المواقع</span>
+      <h2 style="margin-top:20px;">مواقع وتطبيقات</h2>
+      <div class="svc-list mt-lg">
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">01</span> مواقع الشركات</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>مواقع شركات سريعة ومنظمة تعرض الخدمات بوضوح وتُحمَّل بسرعة على أي اتصال.</p>
+            <div class="deliverables"><span>هيكلة المعلومات</span><span>بناء متجاوب</span><span>إعداد نظام إدارة المحتوى</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">02</span> صفحات الهبوط</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>صفحات ذات غرض واحد مبنية لتحويل الزيارات القادمة من حملة محددة.</p>
+            <div class="deliverables"><span>نصوص مركزة على التحويل</span><span>جاهزة لاختبار A/B</span><span>دمج التحليلات</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">03</span> المتاجر الإلكترونية</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>متاجر إلكترونية مبنية لسرعة الدفع، دقة المخزون، وعرض منتجات نظيف.</p>
+            <div class="deliverables"><span>هيكلة الكتالوج</span><span>دمج الدفع</span><span>إدارة الطلبات</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">04</span> تطبيقات ولوحات تحكم</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>أنظمة حجز وأدوات داخلية ولوحات تحكم مصممة حول سير عمل حقيقي بدلاً من قالب عام.</p>
+            <div class="deliverables"><span>تخطيط تجربة المستخدم</span><span>بناء مخصص</span><span>صلاحيات حسب الدور</span></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOFTWARE -->
+  <section class="section bg-navy2" id="software">
+    <div class="container">
+      <span class="eyebrow">03 — البرمجيات</span>
+      <h2 style="margin-top:20px;">أنظمة مخصصة</h2>
+      <div class="svc-list mt-lg">
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">01</span> CRM و ERP</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>أنظمة لتتبع العملاء والطلبات والعمليات في مكان واحد بدلاً من جداول بيانات متفرقة.</p>
+            <div class="deliverables"><span>نمذجة البيانات</span><span>سير عمل مخصص</span><span>تقارير</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">02</span> نقاط البيع والمخزون</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>أدوات نقاط بيع وإدارة مخزون مبنية لتطابق طريقة حركة المخزون فعلياً داخل النشاط التجاري.</p>
+            <div class="deliverables"><span>تتبع المخزون</span><span>تقارير المبيعات</span><span>دعم عدة فروع</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">03</span> واجهات برمجية وتطوير خلفي</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>خدمات خلفية وتكاملات تربط الأدوات التي يعتمد عليها النشاط التجاري بالفعل.</p>
+            <div class="deliverables"><span>تصميم API</span><span>هندسة قواعد البيانات</span><span>تكامل أطراف ثالثة</span></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI -->
+  <section class="section bg-black" id="ai">
+    <div class="container">
+      <span class="eyebrow">04 — الذكاء الاصطناعي</span>
+      <h2 style="margin-top:20px;">دمج الذكاء الاصطناعي</h2>
+      <div class="svc-list mt-lg">
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">01</span> روبوتات المحادثة والمساعدون</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>مساعدون محادثة مدرَّبون على محتوى العمل الفعلي للرد على الأسئلة الشائعة على مدار الساعة.</p>
+            <div class="deliverables"><span>تصميم الحوار</span><span>إعداد قاعدة المعرفة</span><span>التحويل للدعم البشري</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">02</span> الأتمتة بالذكاء الاصطناعي</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>أتمتة الخطوات المتكررة في التسويق والعمليات ليركز الفريق على القرارات لا إدخال البيانات.</p>
+            <div class="deliverables"><span>تخطيط سير العمل</span><span>إعداد التكامل</span><span>المراقبة</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">03</span> توليد المحتوى بالذكاء الاصطناعي</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>إنتاج محتوى بمساعدة الذكاء الاصطناعي مع خطوة مراجعة تحريرية واضحة قبل أي نشر.</p>
+            <div class="deliverables"><span>سير عمل المحتوى</span><span>عملية المراجعة</span><span>إرشادات العلامة التجارية</span></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta bg-blue">
+    <div class="container">
+      <h2 class="reveal-lines"><span class="line"><span>لست متأكداً من</span></span><span class="line"><span>أين تبدأ؟</span></span></h2>
+      <a href="contact.html" class="btn btn-outline" style="border-color:#fff" data-magnetic>تحدث معنا</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><img src="../assets/images/logo/logo.png" alt="CuraX" class="logo-img" onerror="this.remove()">Cura<span>X</span></a>
+        <p>تسويق وتطوير مواقع وبرمجيات وذكاء اصطناعي — شريك رقمي واحد يبني أنظمة تدفع الأعمال إلى الأمام، ونخدم عملاءنا في مصر وجميع دول الخليج.</p>
+      </div>
+      <div class="footer-col">
+        <h5>التنقل</h5>
+        <a href="index.html">الرئيسية</a><a href="about.html">من نحن</a><a href="services.html">خدماتنا</a><a href="work.html">أعمالنا</a><a href="contact.html">تواصل معنا</a>
+      </div>
+      <div class="footer-col">
+        <h5>الخدمات</h5>
+        <a href="services.html#marketing">التسويق</a><a href="services.html#web">تطوير المواقع</a><a href="services.html#software">البرمجيات</a><a href="services.html#ai">الذكاء الاصطناعي</a>
+      </div>
+      <div class="footer-col">
+        <h5>تواصل معنا</h5>
+        <a href="mailto:curax44@gmail.com">curax44@gmail.com</a><a href="tel:01507404838">01507404838</a><a href="https://wa.me/201507404838">واتساب</a><span>[LOCATION]</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CuraX للتسويق والتطوير الرقمي. جميع الحقوق محفوظة.</span>
+      <div class="social-links"><a href="[SOCIAL_INSTAGRAM]">انستغرام</a><a href="[SOCIAL_LINKEDIN]">لينكدإن</a><a href="[SOCIAL_BEHANCE]">بيهانس</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.13/lenis.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../js/animations.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.svc-item').forEach((item) => {
+    const head = item.querySelector('.svc-head');
+    const body = item.querySelector('.svc-body');
+    head.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      item.closest('.svc-list').querySelectorAll('.svc-item.open').forEach((openItem) => {
+        if (openItem !== item) { openItem.classList.remove('open'); openItem.querySelector('.svc-body').style.maxHeight = null; }
+      });
+      item.classList.toggle('open', !isOpen);
+      body.style.maxHeight = !isOpen ? body.scrollHeight + 'px' : null;
+    });
+  });
+});
+</script>
+<a href="https://wa.me/201507404838" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.02 3C9.4 3 4 8.38 4 15c0 2.3.63 4.46 1.73 6.32L4 29l7.86-1.68A11.9 11.9 0 0 0 16.02 27C22.63 27 28 21.62 28 15S22.63 3 16.02 3zm6.98 16.6c-.3.85-1.5 1.56-2.46 1.76-.66.14-1.5.25-4.35-.93-3.66-1.5-6.02-5.2-6.2-5.44-.18-.24-1.48-1.97-1.48-3.76 0-1.79.94-2.67 1.27-3.03.33-.36.72-.45.96-.45.24 0 .48 0 .69.01.22.01.52-.08.81.62.3.72 1.02 2.49 1.11 2.67.09.18.15.4.03.64-.12.24-.18.39-.36.6-.18.21-.38.47-.54.63-.18.18-.37.38-.16.74.21.36.93 1.53 2 2.48 1.37 1.22 2.53 1.6 2.89 1.78.36.18.57.15.78-.09.21-.24.9-1.05 1.14-1.41.24-.36.48-.3.81-.18.33.12 2.1.99 2.46 1.17.36.18.6.27.69.42.09.15.09.87-.21 1.72z"/></svg>
+</a>
+</body>
+</html>

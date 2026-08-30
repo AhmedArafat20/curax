@@ -1,0 +1,33 @@
+/* ==========================================================================
+   CURAX — ANIMATION SUPPORT STYLES
+   Base states for elements animated by GSAP. Kept separate from layout CSS.
+   ========================================================================== */
+
+[data-fade-up] { opacity: 0; transform: translateY(40px); }
+[data-fade] { opacity: 0; }
+[data-scale-in] { opacity: 0; transform: scale(0.94); }
+[data-stagger] > * { opacity: 0; transform: translateY(30px); }
+
+.page-transition {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-black);
+  z-index: 2000;
+  transform: translateY(100%);
+  pointer-events: none;
+}
+
+/* magnetic elements get inline transforms from JS; keep transitions off while dragging */
+[data-magnetic] { transition: transform .15s var(--ease-out); }
+
+/* Respect reduced motion: neutralize transform-based reveals */
+@media (prefers-reduced-motion: reduce) {
+  [data-fade-up], [data-fade], [data-scale-in], [data-stagger] > *,
+  .reveal-lines .line span, .funnel-step {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+  .hero-scroll-line::after { animation: none; }
+}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>(function(){try{var t=localStorage.getItem('curax-theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — CuraX | Marketing, Web, Software &amp; AI</title>
+<meta name="description" content="Explore CuraX's services: performance marketing, web development, custom software and AI — each broken down into what we actually deliver.">
+<link rel="canonical" href="[CANONICAL_URL]/services.html">
+<meta property="og:title" content="CuraX Services">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+<style>
+.svc-list { border-top: 1px solid var(--border-on-dark); }
+.svc-item { border-bottom: 1px solid var(--border-on-dark); }
+.svc-head { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 32px 0; cursor: pointer; transition: padding-inline-start .3s var(--ease-out); }
+.svc-head:hover .svc-num { color: var(--red-bright); }
+.svc-head .svc-title { display: flex; align-items: baseline; gap: 20px; font-family: var(--font-display); font-size: clamp(1.2rem, 2.4vw, 1.9rem); }
+.svc-head .svc-num { color: var(--blue-bright); font-size: 0.9rem; transition: color .3s var(--ease-out); }
+.svc-toggle { width: 30px; height: 30px; border: 1px solid var(--border-on-dark); border-radius: 50%; position: relative; flex-shrink: 0; transition: transform .3s var(--ease-out); }
+.svc-toggle::before, .svc-toggle::after { content: ''; position: absolute; background: #fff; top: 50%; left: 50%; }
+.svc-toggle::before { width: 12px; height: 1px; transform: translate(-50%,-50%); }
+.svc-toggle::after { width: 1px; height: 12px; transform: translate(-50%,-50%); transition: opacity .3s; }
+.svc-item.open .svc-toggle::after { opacity: 0; }
+.svc-item.open .svc-toggle { transform: rotate(180deg); }
+.svc-body { max-height: 0; overflow: hidden; transition: max-height .45s var(--ease-in-out); }
+.svc-body-inner { padding-bottom: 36px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.svc-body p { color: var(--text-on-dark-sec); max-width: 50ch; }
+.svc-body .deliverables span { display: inline-block; margin: 4px 8px 4px 0; padding: 6px 14px; border: 1px solid var(--border-on-dark); border-radius: 100px; font-size: 0.78rem; color: var(--text-on-dark-sec); }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/images/logo/logo.png" alt="CuraX" class="logo-img" onerror="this.remove()">Cura<span>X</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="work.html">Work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-switch"><a href="services.html" class="active" data-lang-link>EN</a><span>/</span><a href="ar/services.html" data-lang-link>AR</a></div>
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"><span class="theme-toggle-track"><span class="theme-toggle-thumb"></span></span></button>
+      <a href="contact.html" class="btn btn-primary nav-cta" data-magnetic>Start a Project</a>
+      <button class="mobile-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu">
+  <nav class="mobile-menu-links" aria-label="Mobile">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="contact.html">Contact</a>
+  </nav>
+  <div class="mobile-menu-footer">
+    <div class="lang-switch"><a href="services.html" class="active" data-lang-link>EN</a><span>/</span><a href="ar/services.html" data-lang-link>AR</a></div>
+    <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"><span class="theme-toggle-track"><span class="theme-toggle-thumb"></span></span></button>
+    <a href="contact.html" class="btn btn-outline">Start a Project</a>
+  </div>
+</div>
+
+<main>
+  <section class="section bg-black" style="padding-top:calc(var(--nav-h) + 60px)">
+    <div class="container">
+      <span class="eyebrow">Services</span>
+      <h1 class="reveal-lines" style="font-size:var(--fs-h1); margin-top:22px; max-width:16ch;">
+        <span class="line"><span>WHAT WE ACTUALLY</span></span>
+        <span class="line"><span>DELIVER.</span></span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- MARKETING -->
+  <section class="section bg-navy2" id="marketing">
+    <div class="container">
+      <span class="eyebrow">01 — Marketing</span>
+      <h2 style="margin-top:20px;">Performance Marketing</h2>
+      <div class="svc-list mt-lg">
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">01</span> Google Ads</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>Search, display and shopping campaigns structured around intent, with budget moved toward what converts.</p>
+            <div class="deliverables"><span>Keyword strategy</span><span>Ad copy</span><span>Conversion tracking</span><span>Monthly reporting</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">02</span> Meta &amp; Instagram Ads</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>Creative-led campaigns across Facebook and Instagram, tested and iterated against real engagement data.</p>
+            <div class="deliverables"><span>Audience targeting</span><span>Creative testing</span><span>Pixel setup</span><span>Retargeting</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">03</span> TikTok &amp; Snapchat Ads</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>Short-form campaigns built for platform-native formats rather than repurposed static ads.</p>
+            <div class="deliverables"><span>Creative concepting</span><span>Spark ads setup</span><span>Performance tracking</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">04</span> SEO &amp; Content</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>Technical and on-page SEO paired with content built around what the audience is actually searching.</p>
+            <div class="deliverables"><span>Technical audit</span><span>On-page optimization</span><span>Content calendar</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">05</span> Social Media Management</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>Consistent, on-brand presence with a content plan tied to business goals, not just posting for its own sake.</p>
+            <div class="deliverables"><span>Content planning</span><span>Community management</span><span>Analytics</span></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEB -->
+  <section class="section bg-black" id="web">
+    <div class="container">
+      <span class="eyebrow">02 — Web Development</span>
+      <h2 style="margin-top:20px;">Websites &amp; Applications</h2>
+      <div class="svc-list mt-lg">
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">01</span> Corporate Websites</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>Fast, structured company sites that present services clearly and load quickly on any connection.</p>
+            <div class="deliverables"><span>Information architecture</span><span>Responsive build</span><span>CMS setup</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">02</span> Landing Pages</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>Single-purpose pages built to convert traffic from a specific campaign.</p>
+            <div class="deliverables"><span>Conversion-focused copy</span><span>A/B test ready</span><span>Analytics integration</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">03</span> E-commerce</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>Online stores built for checkout speed, inventory accuracy and clean product presentation.</p>
+            <div class="deliverables"><span>Catalog structure</span><span>Payment integration</span><span>Order management</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">04</span> Web Applications &amp; Dashboards</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>Booking systems, internal tools and dashboards shaped around a real workflow rather than a generic template.</p>
+            <div class="deliverables"><span>UX mapping</span><span>Custom build</span><span>Role-based access</span></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOFTWARE -->
+  <section class="section bg-navy2" id="software">
+    <div class="container">
+      <span class="eyebrow">03 — Software</span>
+      <h2 style="margin-top:20px;">Custom Systems</h2>
+      <div class="svc-list mt-lg">
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">01</span> CRM &amp; ERP</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>Systems for tracking customers, orders and operations in one place instead of scattered spreadsheets.</p>
+            <div class="deliverables"><span>Data modeling</span><span>Custom workflows</span><span>Reporting</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">02</span> POS &amp; Inventory</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>Point-of-sale and inventory tools built to match how stock actually moves through the business.</p>
+            <div class="deliverables"><span>Stock tracking</span><span>Sales reporting</span><span>Multi-location support</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">03</span> APIs &amp; Backend Development</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>Backend services and integrations that connect the tools a business already relies on.</p>
+            <div class="deliverables"><span>API design</span><span>Database architecture</span><span>Third-party integration</span></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI -->
+  <section class="section bg-black" id="ai">
+    <div class="container">
+      <span class="eyebrow">04 — AI</span>
+      <h2 style="margin-top:20px;">AI Integration</h2>
+      <div class="svc-list mt-lg">
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">01</span> AI Chatbots &amp; Assistants</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>Conversational assistants trained on real business content to handle common questions around the clock.</p>
+            <div class="deliverables"><span>Conversation design</span><span>Knowledge base setup</span><span>Handoff to human support</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">02</span> AI Automation</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>Automating repetitive steps in marketing and operations so the team spends time on judgment calls, not data entry.</p>
+            <div class="deliverables"><span>Workflow mapping</span><span>Integration setup</span><span>Monitoring</span></div>
+          </div></div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-head"><div class="svc-title"><span class="svc-num">03</span> AI Content Generation</div><div class="svc-toggle"></div></div>
+          <div class="svc-body"><div class="svc-body-inner">
+            <p>AI-assisted content production with a clear editorial review step before anything is published.</p>
+            <div class="deliverables"><span>Content workflow</span><span>Review process</span><span>Brand guidelines</span></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta bg-blue">
+    <div class="container">
+      <h2 class="reveal-lines"><span class="line"><span>NOT SURE WHERE</span></span><span class="line"><span>TO START?</span></span></h2>
+      <a href="contact.html" class="btn btn-outline" style="border-color:#fff" data-magnetic>Talk to Us</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><img src="assets/images/logo/logo.png" alt="CuraX" class="logo-img" onerror="this.remove()">Cura<span>X</span></a>
+        <p>Marketing, web development, software and AI — one digital partner building systems that move businesses forward, serving clients across Egypt and the Gulf.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="services.html#marketing">Marketing</a><a href="services.html#web">Web Development</a><a href="services.html#software">Software</a><a href="services.html#ai">AI</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:curax44@gmail.com">curax44@gmail.com</a><a href="tel:01507404838">01507404838</a><a href="https://wa.me/201507404838">WhatsApp</a><span>[LOCATION]</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CuraX Marketing &amp; Web Developments. All rights reserved.</span>
+      <div class="social-links"><a href="[SOCIAL_INSTAGRAM]">Instagram</a><a href="[SOCIAL_LINKEDIN]">LinkedIn</a><a href="[SOCIAL_BEHANCE]">Behance</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.13/lenis.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/animations.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.svc-item').forEach((item) => {
+    const head = item.querySelector('.svc-head');
+    const body = item.querySelector('.svc-body');
+    head.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      item.closest('.svc-list').querySelectorAll('.svc-item.open').forEach((openItem) => {
+        if (openItem !== item) { openItem.classList.remove('open'); openItem.querySelector('.svc-body').style.maxHeight = null; }
+      });
+      item.classList.toggle('open', !isOpen);
+      body.style.maxHeight = !isOpen ? body.scrollHeight + 'px' : null;
+    });
+  });
+});
+</script>
+<a href="https://wa.me/201507404838" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.02 3C9.4 3 4 8.38 4 15c0 2.3.63 4.46 1.73 6.32L4 29l7.86-1.68A11.9 11.9 0 0 0 16.02 27C22.63 27 28 21.62 28 15S22.63 3 16.02 3zm6.98 16.6c-.3.85-1.5 1.56-2.46 1.76-.66.14-1.5.25-4.35-.93-3.66-1.5-6.02-5.2-6.2-5.44-.18-.24-1.48-1.97-1.48-3.76 0-1.79.94-2.67 1.27-3.03.33-.36.72-.45.96-.45.24 0 .48 0 .69.01.22.01.52-.08.81.62.3.72 1.02 2.49 1.11 2.67.09.18.15.4.03.64-.12.24-.18.39-.36.6-.18.21-.38.47-.54.63-.18.18-.37.38-.16.74.21.36.93 1.53 2 2.48 1.37 1.22 2.53 1.6 2.89 1.78.36.18.57.15.78-.09.21-.24.9-1.05 1.14-1.41.24-.36.48-.3.81-.18.33.12 2.1.99 2.46 1.17.36.18.6.27.69.42.09.15.09.87-.21 1.72z"/></svg>
+</a>
+</body>
+</html>

@@ -1,0 +1,40 @@
+/* ==========================================================================
+   CURAX — RESPONSIVE RULES
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .service-block { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: 1fr; }
+  .team-grid .team-founder { order: 1; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; row-gap: 40px; }
+}
+
+@media (max-width: 900px) {
+  .nav-links, .nav-right .lang-switch, .nav-cta { display: none; }
+  .mobile-toggle { display: flex; }
+  .nav-right { gap: 14px; }
+  .theme-toggle-track { width: 40px; height: 22px; }
+  .theme-toggle-thumb { width: 16px; height: 16px; }
+  [data-theme="light"] .theme-toggle-thumb { transform: translateX(18px); }
+  [dir="rtl"][data-theme="light"] .theme-toggle-thumb { transform: translateX(-18px); }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .stat { border-inline-end: 1px solid var(--border-on-dark); border-bottom: 1px solid var(--border-on-dark); padding-bottom: 30px; }
+  .why-benefits { grid-template-columns: 1fr; }
+  .project-row, .project-row:nth-child(even) { grid-template-columns: 1fr; grid-template-rows: auto auto; }
+  .eco-wrap { transform: scale(0.72); }
+}
+
+@media (max-width: 640px) {
+  :root { --nav-h: 76px; }
+  .hero-actions { flex-direction: column; align-items: flex-start; }
+  .grid-2 { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+  .browser-stack, .node-field, .ai-core { height: 260px; }
+  .filter-bar { gap: 8px; }
+  .filter-btn { padding: 8px 14px; font-size: 0.75rem; }
+}
+
+/* Prevent any accidental horizontal scroll */
+html, body { max-width: 100%; overflow-x: hidden; }

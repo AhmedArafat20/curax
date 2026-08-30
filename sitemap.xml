@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>[CANONICAL_URL]/index.html</loc></url>
+  <url><loc>[CANONICAL_URL]/about.html</loc></url>
+  <url><loc>[CANONICAL_URL]/services.html</loc></url>
+  <url><loc>[CANONICAL_URL]/work.html</loc></url>
+  <url><loc>[CANONICAL_URL]/contact.html</loc></url>
+  <url><loc>[CANONICAL_URL]/ar/index.html</loc></url>
+  <url><loc>[CANONICAL_URL]/ar/about.html</loc></url>
+  <url><loc>[CANONICAL_URL]/ar/services.html</loc></url>
+  <url><loc>[CANONICAL_URL]/ar/work.html</loc></url>
+  <url><loc>[CANONICAL_URL]/ar/contact.html</loc></url>
+</urlset>
